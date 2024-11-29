@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.recipe-card {
+    max-width: 600px; /* Total width of the card */
+    margin: 20px auto; /* Center the card */
+    background: #fff;
+    border: 2px solid #ddd; /* Border to demonstrate box model */
+    border-radius: 8px;
+    padding: 20px; /* Space inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px; /* Space outside the title */
+}
+
+.recipe-image {
+    width: 100%; /* Image width adjusts to the card */
+    border: 2px solid #ddd; /* Add border to image */
+    border-radius: 8px; /* Round the image corners */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.ingredients-list, .steps-list {
+    margin: 10px 0; /* Space outside the list */
+    padding: 10px; /* Space inside the list */
+    border: 1px solid #ddd; /* Add border to lists */
+    border-radius: 5px; /* Round corners of the lists */
+    background-color: #f4f4f4; /* Light background for better visibility */
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 10px auto; /* Center the button */
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.prep-info {
+    margin-top: 15px; /* Space above prep info */
+    padding: 10px; /* Space inside the prep info section */
+    border-top: 1px solid #ddd; /* Top border to separate content */
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+
+
+.ingredients-list, .steps-list {
+    list-style-position: inside; /* Aligns bullets or numbers with text */
+    padding-left: 15px; /* Adds a controlled indentation */
+    margin: 10px 0; /* Space outside the lists */
+    padding: 10px; /* Space inside the lists */
+    border: 1px solid #ddd; /* Visible boundary */
+    border-radius: 5px; /* Smooth corners */
+    background-color: #f4f4f4; /* Light background for readability */
+}
+
+.ingredients-list li, .steps-list li {
+    margin-bottom: 8px; /* Adds space between list items */
+    line-height: 1.5; /* Improves text readability */
+    font-size: 1rem; /* Ensures consistent text size */
+}
+.recipe-image {
+    width: 100%;  /* Makes the image responsive, adjusts to the width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    max-width: 500px; /* Sets a maximum width to prevent the image from getting too large */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+
+
+
+
+
+
+.ingredients-list li:hover, .steps-list li:hover {
+    color: #6200ea;
+    text-decoration: underline;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .recipe-card {
+        padding: 10px;
+    }
+
+    .recipe-title {
+        font-size: 1.5rem;
+    }
+
+    .prep-info {
+        font-size: 0.9rem;
+    }
+}
